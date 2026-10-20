@@ -1,0 +1,115 @@
+package org.CRUDOperations;
+
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+import java.util.Scanner;
+
+public class CRUD {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		com.mysql.cj.jdbc.Driver driver = new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(driver);
+		Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdb", "Shambhu Sharma",
+				"Sh@mbhu26");
+		if (connect != null) {
+			System.out.println("Database is Connected Successfully...");
+			Statement stmt = connect.createStatement();
+
+			int result = stmt.executeUpdate(
+					"CREATE TABLE IF NOT EXISTS students(id INT PRIMARY KEY, name VARCHAR(100) NOT NULL, age INT, course VARCHAR(100), marks DOUBLE);");
+
+			Scanner input = new Scanner(System.in);
+
+			do {
+
+				System.out.println("\n========== STUDENT RECORD MANAGEMENT ==========");
+				System.out.println("[1]: Add Student.");
+				System.out.println("[2]: View All Students.");
+				System.out.println("[3]: Search Student by ID.");
+				System.out.println("[4]: Update Student Details.");
+				System.out.println("[5]: Delete Student.");
+				System.out.println("[6]: Exit.");
+
+				System.out.print("\nEnter Your Choice : ");
+				int choice = input.nextInt();
+
+				switch (choice) {
+
+				case 1:
+					System.out.print("\n\tEnter Student ID : ");
+					int id = input.nextInt();
+					input.nextLine();
+
+					System.out.print("\tEnter Student Name : ");
+					String name = input.nextLine();
+
+					System.out.print("\tEnter Age : ");
+					int age = input.nextInt();
+					input.nextLine();
+
+					System.out.print("\tEnter Course : ");
+					String course = input.nextLine();
+
+					System.out.print("\tEnter Marks : ");
+					double marks = input.nextDouble();
+
+					result = stmt.executeUpdate("INSERT INTO students VALUES(" + id + ",'" + name + "'," + age + ",'"
+							+ course + "'," + marks + ")");
+					if (result != 0) {
+						System.out.println("\n\tStudent added Successfully!");
+					} else {
+						System.out.println("\n\tStudent not added!");
+					}
+					break;
+
+				case 2:
+					ResultSet fetch = stmt.executeQuery("SELECT * FROM STUDENTS");
+					System.out.println("\n\t=================== ALL STUDENTS ===================");
+					System.out.println("\tID\tName\t\tAge\tCourse\tMarks");
+					while (fetch.next()) {
+						System.out.println(
+								"\t" + fetch.getInt("id") + "\t" + fetch.getString("name") + "\t" + fetch.getInt("age")
+										+ "\t" + fetch.getString("course") + "\t" + fetch.getInt("marks"));
+					}
+					break;
+
+				case 3:
+					System.out.print("Enter Student ID : ");
+					id = input.nextInt();
+
+					ResultSet search = stmt.executeQuery("SELECT * FROM STUDENTS WHERE id = " + id + "");
+					System.out.println("\n\t=================== STUDENTS ===================");
+					System.out.println("\tID\tName\t\tAge\tCourse\tMarks");
+					while (search.next()) {
+						System.out.println("\t" + search.getInt("id") + "\t" + search.getString("name") + "\t"
+								+ search.getInt("age") + "\t" + search.getString("course") + "\t"
+								+ search.getInt("marks"));
+					}
+					break;
+
+				case 4:
+					break;
+
+				case 5:
+					break;
+
+				case 6:
+					break;
+
+				default:
+					System.out.println("Invalid Input...!");
+				}
+
+			} while (true);
+
+		} else {
+			System.out.println("Database is Not Connected...!");
+		}
+	}
+
+}

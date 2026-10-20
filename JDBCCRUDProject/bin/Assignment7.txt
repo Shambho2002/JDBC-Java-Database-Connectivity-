@@ -1,0 +1,16 @@
+Problem statement
+Develop a menu-driven Java application that connects to a MySQL database using JDBC and manages student records through CRUD operations.
+
+The program should repeatedly display a menu and allow the user to select an operation until they choose to exit.
+
+Your application must display the following menu:
+========== STUDENT RECORD MANAGEMENT ==========
+
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. Update Student Details
+5. Delete Student
+6. Exit
+
+Enter your choice:

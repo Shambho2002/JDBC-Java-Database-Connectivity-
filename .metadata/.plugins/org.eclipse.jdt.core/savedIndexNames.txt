@@ -1,0 +1,12 @@
+INDEX VERSION 1.134+E:\GIRI'S TECH HUB\Java Full Stack Course\AdvanceJava\JDBC\Problems\.metadata\.plugins\org.eclipse.jdt.core
+4280841410.index
+4105167957.index
+886762742.index
+3008422813.index
+2002285687.index
+1821938745.index
+4254223340.index
+388318050.index
+1288848795.index
+1865797976.index
+4130781217.index

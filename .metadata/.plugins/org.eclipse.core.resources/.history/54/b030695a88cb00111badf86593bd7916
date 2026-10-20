@@ -1,0 +1,32 @@
+package org.ThirdJDBCConnectionApplication;
+
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.Statement;
+public class JDBCConnectionApplication {
+
+	public static void main(String[] args) throws Exception{
+		// TODO Auto-generated method stub
+		com.mysql.cj.jdbc.Driver driver = new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(driver);
+		Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306:firstjdbc","Shambhu Sharma","Sh@mbhu26");
+		if(connect != null) {
+			System.out.println("Database is Connected Successfully...");
+			Statement stmt = connect.createStatement();
+			int result = stmt.executeUpdate("insert into employee values(1,'Shambhu Sharma', 30000)");
+			if(result != 0) {
+				System.out.println("Record has been saved successfully...");
+			}
+			else {
+				System.out.println("Something Went Wrong!");
+				System.out.println("Record not saved...!");
+			}
+		}
+		else {
+			System.out.println("Something went wrong!");
+			System.out.println("Database is not Connected...!");
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+package org.SixthJDBCConnectionApplication;
+
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+public class JDBCConnectionApplication {
+
+	public static void main(String[] args) throws Exception{
+		// TODO Auto-generated method stub
+		com.mysql.cj.jdbc.Driver driver = new com.mysql.cj.jdbc.Driver();
+		DriverManager.registerDriver(driver);
+		Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/firstjdbc","Shambhu Sharma","Sh@mbhu26");
+		if(connect != null) {
+			System.out.println("Database is Connected Successfully...");
+			Statement stmt = connect.createStatement();
+			ResultSet result = stmt.executeQuery("select * from employee");
+			
+			while(result.next()) {
+				System.out.println(result.getInt("eid")+""+result.getString("name")+""+result.getString("salary"));
+			}
+		}
+		else {
+			System.out.println("Database is not Connected...!");
+		}
+	}
+
+}
