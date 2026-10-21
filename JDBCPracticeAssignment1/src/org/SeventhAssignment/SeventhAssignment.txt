@@ -1,0 +1,8 @@
+Assignment 7: Search Employees by City
+Table: employees
+Description: Retrieve employees belonging to a city entered by the user and display them in alphabetical order by employee name.
+Expected behavior:
+Accept a city name as input.
+Filter employees using a parameterized condition.
+Sort the matching records by employee name.
+Display a suitable message when no employees match.

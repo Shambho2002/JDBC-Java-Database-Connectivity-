@@ -7,8 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
 
-import java.util.Scanner;
-
 public class SalaryOrder {
 
 	public static void main(String[] args) throws Exception {
