@@ -1,0 +1,8 @@
+Assignment 3: Delete an Employee
+Table: employees
+Description: Delete an employee using their employee ID.
+Expected behavior:
+Accept an employee ID as input.
+Delete the corresponding employee using PreparedStatement.
+Display whether a record was deleted.
+Consider foreign key relationships with employee_projects before deleting an employee.

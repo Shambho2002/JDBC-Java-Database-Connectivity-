@@ -1,0 +1,8 @@
+Assignment 4: Insert a New Department
+Table: departments
+Description: Create a program that inserts a new department using a department name and location provided by the user.
+Expected behavior:
+Accept department name and location.
+Insert the department into the database.
+Display the generated department ID if available.
+Handle database errors appropriately.

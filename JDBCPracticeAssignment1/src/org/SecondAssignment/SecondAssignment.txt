@@ -1,0 +1,8 @@
+Assignment 2: Update Employee Salary
+Table: employees
+Description: Increase or change the salary of an employee based on the employee ID entered by the user.
+Expected behavior:
+Accept employee ID and new salary.
+Update only the employee matching the specified ID.
+Display the number of affected rows.
+Handle the case where the employee ID does not exist.

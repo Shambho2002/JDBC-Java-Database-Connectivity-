@@ -1,0 +1,9 @@
+Assignment 5: Update Order Status
+Table: orders
+Description: Update an order's status based on its order ID. The user should be able to change the status to Pending, Completed, or Cancelled.
+Expected behavior:
+Accept order ID and the new status.
+Update only the matching order.
+Display the number of affected rows.
+Validate the status before executing the update.
+Section B: SELECT Queries Using PreparedStatement and ORDER BY

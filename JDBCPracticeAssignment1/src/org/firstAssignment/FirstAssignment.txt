@@ -1,0 +1,8 @@
+Assignment 1: Insert a New Employee
+Table: employees
+Description: Develop a JDBC operation to insert a new employee into the database. Accept the employee name, email, salary, department ID, joining date, and city as input values.
+Expected behavior:
+Accept employee details from the user.
+Use a parameterized INSERT statement.
+Display a message indicating whether the employee was inserted successfully.
+Handle invalid department IDs and duplicate email addresses appropriately.

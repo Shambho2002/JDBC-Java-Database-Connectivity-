@@ -1,0 +1,8 @@
+Assignment 6: Display Employees in Salary Order
+Table: employees
+Description: Retrieve all employees and display their details in descending order of salary.
+Expected behavior:
+Display employee ID, name, email, salary, and department ID.
+Show the highest-paid employee first.
+Allow the user to enter a minimum salary to filter the results.
+Use ORDER BY to sort the results.
