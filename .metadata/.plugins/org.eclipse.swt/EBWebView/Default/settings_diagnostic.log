@@ -1983,3 +1983,13 @@
 {"logTime": "1023/112753", "level": "INFO", "message": "Preference changed: name=language_usage_count, new_value=[object], source=unknown"}
 {"logTime": "1023/112753", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
 {"logTime": "1023/112803", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1023/113651", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/113657", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/113711", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/113718", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/115557", "level": "INFO", "message": "Preference changed: name=language_dwell_time_average, new_value=[object], source=unknown"}
+{"logTime": "1023/115557", "level": "INFO", "message": "Preference changed: name=language_usage_count, new_value=[object], source=unknown"}
+{"logTime": "1023/115557", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/115607", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1023/120321", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/120340", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}

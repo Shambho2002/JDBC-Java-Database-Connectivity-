@@ -1,0 +1,7 @@
+Assignment 13: Find Customers Without Orders
+Tables: customers, orders
+Description: Identify customers who have never placed an order.
+Expected behavior:
+Use a LEFT JOIN between customers and orders.
+Filter for customers without matching orders.
+Display customer ID, name, email, and city.
