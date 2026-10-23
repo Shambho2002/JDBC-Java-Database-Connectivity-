@@ -1,0 +1,8 @@
+Assignment 12: Display Customers and Their Orders
+Tables: customers, orders
+Description: Retrieve customer information along with their order details.
+Expected behavior:
+Display customer name, email, order ID, order date, total amount, and status.
+Use an INNER JOIN.
+Accept a customer ID as input to filter the results.
+Sort orders by date in descending order.

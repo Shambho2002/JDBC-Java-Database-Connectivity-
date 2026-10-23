@@ -1,0 +1,7 @@
+Assignment 9: Display Employees with Department Names
+Tables: employees, departments
+Description: Retrieve employee information along with the department name in which each employee works.
+Expected behavior:
+Display employee ID, employee name, salary, and department name.
+Use an INNER JOIN between employees and departments.
+Sort the results by department name and employee name.

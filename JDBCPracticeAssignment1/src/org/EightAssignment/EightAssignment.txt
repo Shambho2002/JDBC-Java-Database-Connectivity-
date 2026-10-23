@@ -1,0 +1,7 @@
+Assignment 8: Display Orders by Amount and Date
+Table: orders
+Description: Retrieve orders belonging to a selected status and sort them by total amount from highest to lowest, followed by order date from newest to oldest.
+Expected behavior:
+Accept an order status as input.
+Display order ID, customer ID, order date, amount, and status.
+Apply multiple sorting criteria using ORDER BY.

@@ -1,0 +1,7 @@
+Assignment 11: Display Employees Assigned to Projects
+Tables: employees, employee_projects, projects
+Description: Retrieve the names of employees, the projects they are working on, and the number of hours they have worked on each project.
+Expected behavior:
+Join all three tables using their related IDs.
+Display employee name, project name, hours worked, and assigned date.
+Filter records based on a project ID entered by the user.

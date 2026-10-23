@@ -1,0 +1,8 @@
+Assignment 10: Display All Departments and Their Employees
+Tables: departments, employees
+Description: Display every department, including departments that do not currently have employees.
+Expected behavior:
+Display department ID, department name, employee ID, and employee name.
+Use a LEFT JOIN.
+Show departments with no employees as well.
+Sort the results by department name.
