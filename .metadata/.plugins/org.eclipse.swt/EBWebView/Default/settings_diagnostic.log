@@ -1993,3 +1993,5 @@
 {"logTime": "1023/115607", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
 {"logTime": "1023/120321", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
 {"logTime": "1023/120340", "level": "INFO", "message": "Preference changed: name=language_model_counters, new_value=[object], source=unknown"}
+{"logTime": "1023/121010", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1023/121010", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
